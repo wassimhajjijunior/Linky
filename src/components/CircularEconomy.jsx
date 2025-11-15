@@ -27,36 +27,36 @@ export default function CircularEconomy() {
   const leftFeatures = [
     {
       icon: Leaf,
-      title: "Carbon Reduction",
+      title: "Réduction du Carbone",
       description:
-        "Linky helps reduce waste-related emissions by enabling local sourcing and smarter routing between buyers, sellers, and transport providers."
+        "Linky aide à réduire les émissions liées aux déchets en favorisant l'approvisionnement local et un acheminement plus intelligent entre acheteurs, vendeurs et transporteurs."
     },
     {
       icon: CheckCircle,
-      title: "Trust & Reliability",
+      title: "Confiance & Fiabilité",
       description:
-        "Linky connects verified sellers, buyers, and transporters, ensuring a secure and transparent marketplace."
+        "Linky connecte des vendeurs, acheteurs et transporteurs vérifiés, garantissant un marché sécurisé et transparent."
     },
     {
       icon: Shield,
-      title: "Compliance",
+      title: "Conformité",
       description:
-        "Linky automates documentation, keeps you updated with regulations, and ensures all transactions follow regional compliance rules."
+        "Linky automatise la documentation, vous tient informé des réglementations et veille à ce que toutes les transactions respectent les règles régionales."
     }
   ];
 
   const rightFeatures = [
     {
       icon: DollarSign,
-      title: "Profitability",
+      title: "Rentabilité",
       description:
-        "Linky helps sellers find the best offers and buyers find the best prices—while keeping transport cost-effective."
+        "Linky aide les vendeurs à trouver les meilleures offres et les acheteurs à obtenir les meilleurs prix, tout en gardant les coûts de transport optimisés."
     },
     {
       icon: User,
-      title: "Hand-Held Service",
+      title: "Accompagnement Personnalisé",
       description:
-        "Linky guides users step-by-step through listing, buying, and transporting materials with a smooth, intuitive experience."
+        "Linky guide les utilisateurs étape par étape dans la publication, l'achat et le transport de matériaux avec une expérience fluide et intuitive."
     }
   ];
 
@@ -64,7 +64,7 @@ export default function CircularEconomy() {
     <div className="bg-green-700 from-emerald-800 to-emerald-700 py-10 px-4 overflow-y-auto rounded-t-2xl ">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-white text-4xl font-bold text-center mb-16">
-          Circular Economy
+          Économie Circulaire
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
@@ -86,10 +86,10 @@ export default function CircularEconomy() {
         {/* CTA buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-6 mt-16">
           <button className="bg-white text-emerald-700 px-10 py-4 rounded-xl font-bold uppercase tracking-wide shadow hover:shadow-lg hover:scale-105 transition transform">
-            Buy Materials
+            Acheter des Matériaux
           </button>
           <button className="bg-gray-900 text-white px-10 py-4 rounded-xl font-bold uppercase tracking-wide shadow hover:shadow-lg hover:scale-105 transition transform">
-            View Wanted Materials
+            Voir les Matériaux Demandés
           </button>
         </div>
       </div>

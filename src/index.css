@@ -11,3 +11,11 @@ html {
 html {
   scroll-behavior: smooth;
 }
+button{
+  cursor: pointer;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}

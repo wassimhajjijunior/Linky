@@ -1,7 +1,10 @@
 import CircularEconomy from './components/CircularEconomy.jsx'
 import Header from './components/Header.jsx'
 import HowToWork from './components/HowToWork.jsx'
+import JoinWasteTrade from './components/JoinWasteTrade.jsx'
 import WasteMarketplace from './components/WasteMarketplace.jsx'
+import WasteTradeMaterials from './components/WasteTradeMaterials.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       </div>
       <CircularEconomy/>
       <HowToWork />
+      <WasteTradeMaterials/>
+      <JoinWasteTrade/>
+      <Footer/>
     </div>
   )
 }
