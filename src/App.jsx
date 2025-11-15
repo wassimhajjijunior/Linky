@@ -5,19 +5,32 @@ import JoinWasteTrade from './components/JoinWasteTrade.jsx'
 import WasteMarketplace from './components/WasteMarketplace.jsx'
 import WasteTradeMaterials from './components/WasteTradeMaterials.jsx'
 import Footer from './components/Footer.jsx'
+import MarketplaceSection from './components/MarketplaceSection.jsx'
+import { useState } from 'react'
 
 function App() {
+  const [showMarketplace, setShowMarketplace] = useState(false);
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <Header />
+      <Header onMarketplaceClick={() => setShowMarketplace(true)}/>
 
-      <div className="w-full pt-32 mb-10 overflow-auto">
-        <WasteMarketplace />
-      </div>
-      <CircularEconomy/>
-      <HowToWork />
-      <WasteTradeMaterials/>
-      <JoinWasteTrade/>
+      {showMarketplace &&
+
+        <MarketplaceSection onClose={() => setShowMarketplace(false)}/>
+
+      }
+
+      { !showMarketplace &&
+      <>
+        <div className="w-full pt-32 mb-10 overflow-auto">
+          <WasteMarketplace />
+        </div>
+        <CircularEconomy/>
+        <HowToWork />
+        <WasteTradeMaterials/>
+        <JoinWasteTrade/>
+      </>
+      }
       <Footer/>
     </div>
   )

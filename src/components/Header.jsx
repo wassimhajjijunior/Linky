@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Globe, Leaf, Menu, X } from "lucide-react";
 
-export default function Header() {
+export default function Header({onMarketplaceClick}) {
   const [language, setLanguage] = useState("FR");
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -19,7 +19,8 @@ export default function Header() {
 
         {/* Center Navigation */}
         <div className="hidden md:flex flex-1 justify-center gap-10">
-          <button className="text-lg font-semibold text-gray-800 hover:text-emerald-600 transition">
+          <button className="text-lg font-semibold text-gray-800 hover:text-emerald-600 transition"
+          onClick={onMarketplaceClick}>
             Marché
           </button>
           <button className="text-lg font-semibold text-gray-800 hover:text-emerald-600 transition">
