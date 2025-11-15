@@ -46,9 +46,9 @@ export default function Header({onMarketplaceClick}) {
               onChange={(e) => setLanguage(e.target.value)}
               className="bg-transparent outline-none cursor-pointer text-emerald-800 font-medium text-lg"
             >
-              <option value="FR">🇫🇷 Français</option>
-              <option value="EN">🇬🇧 Anglais</option>
-              <option value="AR">🇹🇳 عربي</option>
+              <option value="FR">Français</option>
+              <option value="EN">Anglais</option>
+              <option value="AR"> عربي</option>
             </select>
           </div>
         </div>
@@ -65,7 +65,8 @@ export default function Header({onMarketplaceClick}) {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t px-6 py-4 flex flex-col gap-4">
-          <button className="text-lg font-semibold text-gray-800 hover:text-emerald-600 transition">
+          <button className="text-lg font-semibold text-gray-800 hover:text-emerald-600 transition"
+          onClick={onMarketplaceClick}>
             Marché
           </button>
           <button className="text-lg font-semibold text-gray-800 hover:text-emerald-600 transition">
@@ -88,9 +89,9 @@ export default function Header({onMarketplaceClick}) {
               onChange={(e) => setLanguage(e.target.value)}
               className="bg-transparent outline-none cursor-pointer text-emerald-800 font-medium text-lg"
             >
-              <option value="FR">🇫🇷 Français</option>
-              <option value="EN">🇬🇧 Anglais</option>
-              <option value="AR">🇹🇳 عربي</option>
+              <option value="FR">Français</option>
+              <option value="EN">Anglais</option>
+              <option value="AR"> عربي</option>
             </select>
           </div>
         </div>
